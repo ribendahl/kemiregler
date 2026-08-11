@@ -14,135 +14,135 @@
 8
 <style>
 9
-body{
+body {
 10
 font-family: Arial, sans-serif;
 11
-background:#eef5ff;
+background: #eef5ff;
 12
-text-align:center;
+text-align: center;
 13
-padding:20px;
+padding: 20px;
 14
 }
 15
  
 16
-h1{
+h1 {
 17
-color:#004080;
+color: #004080;
 18
 }
 19
  
 20
-#game{
+#game {
 21
-max-width:800px;
+max-width: 800px;
 22
-margin:auto;
+margin: auto;
 23
-background:white;
+background: white;
 24
-padding:25px;
+padding: 25px;
 25
-border-radius:15px;
+border-radius: 15px;
 26
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
 27
 }
 28
  
 29
-button{
+button {
 30
-padding:10px 20px;
+padding: 10px 20px;
 31
-margin:8px;
+margin: 8px;
 32
-cursor:pointer;
+cursor: pointer;
 33
-border:none;
+border: none;
 34
-background:#0078d7;
+background: #0078d7;
 35
-color:white;
+color: white;
 36
-border-radius:8px;
+border-radius: 8px;
 37
-font-size:16px;
+font-size: 16px;
 38
 }
 39
  
 40
-button:hover{
+button:hover {
 41
-background:#005ea6;
+background: #005ea6;
 42
 }
 43
  
 44
-input{
+input {
 45
-padding:10px;
+padding: 10px;
 46
-width:250px;
+width: 280px;
 47
-font-size:16px;
+font-size: 16px;
 48
 }
 49
  
 50
-.correct{
+.correct {
 51
-color:green;
+color: green;
 52
-font-weight:bold;
+font-weight: bold;
 53
 }
 54
  
 55
-.wrong{
+.wrong {
 56
-color:red;
+color: red;
 57
-font-weight:bold;
+font-weight: bold;
 58
 }
 59
  
 60
-#ladder{
+#ladder {
 61
-text-align:left;
+text-align: left;
 62
-margin:20px auto;
+margin: 20px auto;
 63
-max-width:350px;
+max-width: 350px;
 64
-background:#f7f7f7;
+background: #f7f7f7;
 65
-padding:15px;
+padding: 15px;
 66
-border-radius:10px;
+border-radius: 10px;
 67
 }
 68
  
 69
-.current{
+.current {
 70
-background:gold;
+background: gold;
 71
-font-weight:bold;
+font-weight: bold;
 72
-padding:3px;
+padding: 5px;
 73
-border-radius:5px;
+border-radius: 5px;
 74
 }
 75
@@ -230,13 +230,13 @@ const questions = [
 116
 {
 117
-type:"mc",
+type: "mc",
 118
-q:"Vad ska lämnas utanför kemisalen?",
+q: "Vad ska lämnas utanför kemisalen?",
 119
-options:["Datorer","Ytterkläder, väskor och huvudbonad","Pennor"],
+options: ["Datorer", "Ytterkläder, väskor och huvudbonad", "Pennor"],
 120
-answer:"Ytterkläder, väskor och huvudbonad"
+answer: "Ytterkläder, väskor och huvudbonad"
 121
 },
 122
@@ -244,13 +244,13 @@ answer:"Ytterkläder, väskor och huvudbonad"
 123
 {
 124
-type:"mc",
+type: "mc",
 125
-q:"Hur ska man uppträda i kemisalen?",
+q: "Hur ska man uppträda i kemisalen?",
 126
-options:["Lugnt","Högljutt","Springer mellan bänkarna"],
+options: ["Lugnt", "Högljutt", "Springer mellan bänkarna"],
 127
-answer:"Lugnt"
+answer: "Lugnt"
 128
 },
 129
@@ -258,13 +258,13 @@ answer:"Lugnt"
 130
 {
 131
-type:"mc",
+type: "mc",
 132
-q:"Vad måste användas vid laboration?",
+q: "Vad måste användas vid laboration?",
 133
-options:["Hörlurar","Skyddsglasögon och skyddsförkläde","Handskar hela tiden"],
+options: ["Hörlurar", "Skyddsglasögon och skyddsförkläde", "Handskar hela tiden"],
 134
-answer:"Skyddsglasögon och skyddsförkläde"
+answer: "Skyddsglasögon och skyddsförkläde"
 135
 },
 136
@@ -272,13 +272,13 @@ answer:"Skyddsglasögon och skyddsförkläde"
 137
 {
 138
-type:"mc",
+type: "mc",
 139
-q:"När ska långt hår bindas upp?",
+q: "När ska långt hår bindas upp?",
 140
-options:["Alla laborationer","Vid laboration med brännare","Labbar med syror"],
+options: ["Alla laborationer", "Vid laboration med brännare", "Labbar med syror"],
 141
-answer:"Vid laboration med brännare"
+answer: "Vid laboration med brännare"
 142
 },
 143
@@ -286,13 +286,13 @@ answer:"Vid laboration med brännare"
 144
 {
 145
-type:"mc",
+type: "mc",
 146
-q:"Vad får du aldrig göra?",
+q: "Vad får du aldrig göra?",
 147
-options:["Följa instruktioner","Egna experiment","Skriva anteckningar"],
+options: ["Följa instruktioner", "Egna experiment", "Skriva anteckningar"],
 148
-answer:"Egna experiment"
+answer: "Egna experiment"
 149
 },
 150
@@ -300,13 +300,13 @@ answer:"Egna experiment"
 151
 {
 152
-type:"mc",
+type: "mc",
 153
-q:"Var ska sönderslaget glas läggas?",
+q: "Var ska sönderslaget glas läggas?",
 154
-options:["Papperskorg","Glasåtervinning","Handfat"],
+options: ["Papperskorg", "Glasåtervinning", "Handfat"],
 155
-answer:"Glasåtervinning"
+answer: "Glasåtervinning"
 156
 },
 157
@@ -314,11 +314,11 @@ answer:"Glasåtervinning"
 158
 {
 159
-type:"mc",
+type: "mc",
 160
-q:"När ska brännaren tändas?",
+q: "När ska brännaren tändas?",
 161
-options:[
+options: [
 162
 "Precis när den ska användas",
 163
@@ -328,7 +328,7 @@ options:[
 165
 ],
 166
-answer:"Precis när den ska användas"
+answer: "Precis när den ska användas"
 167
 },
 168
@@ -336,11 +336,11 @@ answer:"Precis när den ska användas"
 169
 {
 170
-type:"mc",
+type: "mc",
 171
-q:"Vad gör du med miljöfarliga rester?",
+q: "Vad gör du med miljöfarliga rester?",
 172
-options:[
+options: [
 173
 "Häller i handfatet",
 174
@@ -350,7 +350,7 @@ options:[
 176
 ],
 177
-answer:"Lägger i avsedd avfallsbehållare"
+answer: "Lägger i avsedd avfallsbehållare"
 178
 },
 179
@@ -358,11 +358,11 @@ answer:"Lägger i avsedd avfallsbehållare"
 180
 {
 181
-type:"mc",
+type: "mc",
 182
-q:"Vad ska du göra efter laborationen?",
+q: "Vad ska du göra efter laborationen?",
 183
-options:[
+options: [
 184
 "Gå direkt",
 185
@@ -372,7 +372,7 @@ options:[
 187
 ],
 188
-answer:"Diska och städa"
+answer: "Diska och städa"
 189
 },
 190
@@ -380,11 +380,11 @@ answer:"Diska och städa"
 191
 {
 192
-type:"text",
+type: "text",
 193
-q:"Det är förbjudet att äta eller dricka i ________.",
+q: "Det är förbjudet att äta eller dricka i ________.",
 194
-answers:["kemisalen"]
+answers: ["kemisalen"]
 195
 },
 196
@@ -392,11 +392,11 @@ answers:["kemisalen"]
 197
 {
 198
-type:"text",
+type: "text",
 199
-q:"Sätt alltid på ________ efter att du använt en flaska eller burk.",
+q: "Sätt alltid på ________ efter att du använt en flaska eller burk.",
 200
-answers:["lock","kork"]
+answers: ["lock", "kork"]
 201
 },
 202
@@ -404,11 +404,11 @@ answers:["lock","kork"]
 203
 {
 204
-type:"text",
+type: "text",
 205
-q:"Torka genast om du ________.",
+q: "Torka genast om du ________.",
 206
-answers:["spiller"]
+answers: ["spiller"]
 207
 },
 208
@@ -416,11 +416,11 @@ answers:["spiller"]
 209
 {
 210
-type:"text",
+type: "text",
 211
-q:"Flytta undan brännbara ämnen från ________.",
+q: "Flytta undan brännbara ämnen från ________.",
 212
-answers:["brännaren","brännare"]
+answers: ["brännaren", "brännare"]
 213
 },
 214
@@ -428,11 +428,11 @@ answers:["brännaren","brännare"]
 215
 {
 216
-type:"text",
+type: "text",
 217
-q:"Kyl aldrig varmt glas direkt med kallt vatten eftersom det kan ________.",
+q: "Kyl aldrig varmt glas direkt med kallt vatten eftersom det kan ________.",
 218
-answers:["spricka","spricker"]
+answers: ["spricka", "spricker"]
 219
 },
 220
@@ -440,11 +440,11 @@ answers:["spricka","spricker"]
 221
 {
 222
-type:"text",
+type: "text",
 223
-q:"Vad använder man istället för fingrarna när man tar kemikalier?",
+q: "Vad använder man istället för fingrarna när man tar kemikalier?",
 224
-answers:["sked","en sked"]
+answers: ["sked"]
 225
 },
 226
@@ -452,11 +452,11 @@ answers:["sked","en sked"]
 227
 {
 228
-type:"text",
+type: "text",
 229
-q:"Man ska aldrig rikta ett uppvärmt ________ mot någon.",
+q: "Man ska aldrig rikta ett uppvärmt ________ mot någon.",
 230
-answers:["provrör"]
+answers: ["provrör"]
 231
 },
 232
@@ -464,23 +464,23 @@ answers:["provrör"]
 233
 {
 234
-type:"text",
+type: "text",
 235
-q:"Ge exempel på säkerhetsutrustning i klassrummet.",
+q: "Ge exempel på säkerhetsutrustning i klassrummet.",
 236
-answers:[
+answers: [
 237
 "skyddsglasögon",
 238
-"ögondusch",
+"skyddsförkläde",
 239
 "brandfilt",
 240
 "brandsläckare",
 241
-"nöddusch",
+"ögondusch",
 242
-"skyddsförkläde"
+"nöddusch"
 243
 ]
 244
@@ -490,17 +490,17 @@ answers:[
 246
 {
 247
-type:"text",
+type: "text",
 248
-q:"Vad ska man göra innan man börjar laborera?",
+q: "Vad ska man göra innan man börjar laborera?",
 249
-answers:[
+answers: [
 250
 "planera",
 251
-"tänka igenom",
+"förbereda",
 252
-"förbereda sig"
+"tänka igenom"
 253
 ]
 254
@@ -510,11 +510,11 @@ answers:[
 256
 {
 257
-type:"text",
+type: "text",
 258
-q:"Vem ska du kontakta om material saknas?",
+q: "Vem ska du kontakta om material saknas?",
 259
-answers:["läraren"]
+answers: ["läraren"]
 260
 }
 261
@@ -528,251 +528,252 @@ let currentQuestion;
 265
  
 266
-function shuffleQuestion(){
+function shuffleQuestion() {
 267
-currentQuestion =
+ 
 268
-questions[Math.floor(Math.random()*questions.length)];
+currentQuestion =
 269
- 
+questions[Math.floor(Math.random() * questions.length)];
 270
-document.getElementById("question").innerHTML =
+ 
 271
-currentQuestion.q;
+document.getElementById("question").textContent =
 272
- 
+currentQuestion.q;
 273
-const answerDiv =
+ 
 274
-document.getElementById("answers");
+const answersDiv = document.getElementById("answers");
 275
- 
+answersDiv.innerHTML = "";
 276
-answerDiv.innerHTML = "";
+ 
 277
- 
+if (currentQuestion.type === "mc") {
 278
-if(currentQuestion.type==="mc"){
+ 
 279
- 
+currentQuestion.options.forEach(option => {
 280
-currentQuestion.options.forEach(option=>{
+ 
 281
- 
+const btn = document.createElement("button");
 282
-let btn=document.createElement("button");
+btn.textContent = option;
 283
-btn.innerText=option;
+ 
 284
- 
+btn.onclick = () => {
 285
-btn.onclick=()=>checkAnswer(option);
+checkAnswer(option.toLowerCase());
 286
- 
-287
-answerDiv.appendChild(btn);
-288
-});
-289
- 
-290
-} else {
-291
- 
-292
-let input=document.createElement("input");
-293
-input.id="textAnswer";
-294
- 
-295
-let btn=document.createElement("button");
-296
-btn.innerText="Svara";
-297
- 
-298
-btn.onclick=()=>{
-299
-checkAnswer(
-300
-document.getElementById("textAnswer")
-301
-.value.trim().toLowerCase());
-302
 };
+287
+ 
+288
+answersDiv.appendChild(btn);
+289
+});
+290
+ 
+291
+} else {
+292
+ 
+293
+const input = document.createElement("input");
+294
+input.id = "textAnswer";
+295
+ 
+296
+const btn = document.createElement("button");
+297
+btn.textContent = "Svara";
+298
+ 
+299
+btn.onclick = () => {
+300
+ 
+301
+const value =
+302
+document.getElementById("textAnswer")
 303
- 
+.value
 304
-answerDiv.appendChild(input);
+.trim()
 305
-answerDiv.appendChild(document.createElement("br"));
+.toLowerCase();
 306
-answerDiv.appendChild(btn);
+ 
 307
-}
+checkAnswer(value);
 308
- 
+};
 309
-updateLadder();
+ 
 310
-}
+answersDiv.appendChild(input);
 311
- 
+answersDiv.appendChild(document.createElement("br"));
 312
-function checkAnswer(answer){
+answersDiv.appendChild(btn);
 313
- 
+}
 314
-let correct=false;
+ 
 315
- 
+updateLadder();
 316
-if(currentQuestion.type==="mc"){
+}
 317
-correct=(answer===currentQuestion.answer);
-318
-}
-319
-else{
-320
  
+318
+function checkAnswer(answer) {
+319
+ 
+320
+let correct = false;
 321
-correct =
+ 
 322
-currentQuestion.answers.some(
+if (currentQuestion.type === "mc") {
 323
-a=>answer.includes(a.toLowerCase())
+ 
 324
-);
+correct =
 325
-}
+answer === currentQuestion.answer.toLowerCase();
 326
  
 327
-if(correct){
+} else {
 328
  
 329
-level++;
+correct = currentQuestion.answers.some(a =>
 330
- 
+answer.includes(a.toLowerCase())
 331
-document.getElementById("feedback").innerHTML =
+);
 332
-"<span class='correct'>✅ Rätt! Du levlar upp!</span>";
+}
 333
  
 334
-if(level>=10){
+if (correct) {
 335
  
 336
-document.getElementById("question").innerHTML =
+level++;
 337
-"🏆 DU ÄR KEMIMÄSTARE!";
+ 
 338
- 
+document.getElementById("feedback").innerHTML =
 339
-document.getElementById("answers").innerHTML =
+"<span class='correct'>✅ Rätt! Du levlar upp!</span>";
 340
-"<h2>🎉 Fantastiskt arbete!</h2>";
-341
  
+341
+if (level >= 10) {
 342
-updateLadder();
+ 
 343
-return;
+document.getElementById("question").innerHTML =
 344
-}
+"🏆 DU ÄR KEMIMÄSTARE!";
 345
  
 346
-}else{
+document.getElementById("answers").innerHTML =
 347
- 
+"<h2>🎉 Fantastiskt arbete!</h2>";
 348
-level=0;
+ 
 349
- 
+updateLadder();
 350
-document.getElementById("feedback").innerHTML =
+return;
 351
-"<span class='wrong'>💥 Fel svar! Tillbaka till nivå 0.</span>";
-352
 }
-353
+352
  
+353
+} else {
 354
-document.getElementById("level").innerHTML =
+ 
 355
-"Nivå " + level;
+level = 0;
 356
  
 357
-updateLadder();
+document.getElementById("feedback").innerHTML =
 358
- 
+"<span class='wrong'>💥 Fel svar! Tillbaka till nivå 0.</span>";
 359
-setTimeout(shuffleQuestion,1200);
-360
 }
+360
+ 
 361
- 
+updateLadder();
 362
-function updateLadder(){
+ 
 363
- 
+setTimeout(shuffleQuestion, 1200);
 364
-document.getElementById("level").innerHTML =
+}
 365
-"Nivå " + level;
+ 
 366
- 
+function updateLadder() {
 367
-let html="";
-368
  
+368
+document.getElementById("level").textContent =
 369
-for(let i=10;i>=0;i--){
+"Nivå " + level;
 370
  
 371
-if(i===level){
+let html = "";
 372
-html +=
+ 
 373
-"<div class='current'>" +
+for (let i = 10; i >= 0; i--) {
 374
-levels[i] +
+ 
 375
-"</div>";
+if (i === level) {
 376
-}else{
+html += `<div class="current">${levels[i]}</div>`;
 377
-html += "<div>"+levels[i]+"</div>";
+} else {
 378
-}
+html += `<div>${levels[i]}</div>`;
 379
 }
 380
- 
-381
-document.getElementById("ladder").innerHTML=html;
-382
 }
+381
+ 
+382
+document.getElementById("ladder").innerHTML = html;
 383
- 
+}
 384
-shuffleQuestion();
+ 
 385
- 
+shuffleQuestion();
 386
-</script>
-387
  
+387
+</script>
 388
-</body>
+ 
 389
+</body>
+390
 </html>
-Visa fler rader
